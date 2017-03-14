@@ -10,8 +10,7 @@ public class Monstro : MonoBehaviour {
     public float espera;
 
     public float velocidade2 = 1f;
-    public float limite;
-    public float retorno;
+ 
 
 
     // Use this for initialization
@@ -39,9 +38,5 @@ public class Monstro : MonoBehaviour {
         Vector3 velocidadeVetorial1 = Vector3.left * velocidade2;
 
         transform.position = transform.position + velocidadeVetorial1 * Time.deltaTime;
-
-        if (transform.position.x <= limite) {
-            transform.position = new Vector3(retorno, transform.position.y, transform.position.z);
-        }
     }
 }
